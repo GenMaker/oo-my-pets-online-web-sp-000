@@ -49,7 +49,7 @@ class Owner
   end
 
   def walk_dogs
-    Dog.all.select {|mood| mood  "happy"}
+    Dog.all.each {|mood| mood  "happy"}
 
   end
 
