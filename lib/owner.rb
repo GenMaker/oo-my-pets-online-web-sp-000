@@ -62,20 +62,21 @@ class Owner
     #Cat.all.each {|cat| cat.mood = "nervous", cat.owner= nil}
     #@pets.all.each {|pet| pet.all.each {|mood| mood = "nervous"}}
 
+      #this code works for sell_pets
+      # Dog.all.each {|dog| dog.mood = "nervous"}
+      # Cat.all.each {|cat| cat.mood = "nervous"}
+      # Dog.all.each {|dog| dog.owner= nil}
+      # Cat.all.each {|cat| cat.owner= nil}
 
-    # Dog.all.each {|dog| dog.mood = "nervous"}
-    # Cat.all.each {|cat| cat.mood = "nervous"}
-    # Dog.all.each {|dog| dog.owner= nil}
-    # Cat.all.each {|cat| cat.owner= nil}
-
-    dogs.each do |dog|
-      dog.mood = "nervous"
-      dog.owner= nil
-    end
-    cats.each do |cat|
-      cat.mood = "nervous"
-      cat.owner= nil
-    end
+      # # this code workes for sell_pets
+      # dogs.each do |dog|
+      #   dog.mood = "nervous"
+      #   dog.owner= nil
+      # end
+      # cats.each do |cat|
+      #   cat.mood = "nervous"
+      #   cat.owner= nil
+      # end
 
     #pets = self.cats.concat(self.dogs)
   end
