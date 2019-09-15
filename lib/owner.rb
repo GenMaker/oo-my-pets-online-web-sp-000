@@ -68,7 +68,7 @@ class Owner
     Dog.all.each {|dog| dog.owner= nil}
     Cat.all.each {|cat| cat.owner= nil}
 
-    
+    dogs.
 
   end
 end
