@@ -49,7 +49,7 @@ class Owner
   end
 
   def walk_dogs
-    self.
+    self.collect.do {|pet| pet == dog}
     Dog.mood << "happy"
   end
 
