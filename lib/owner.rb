@@ -50,8 +50,9 @@ class Owner
 
   def walk_dogs
     self.collect.do |pet,owner|
-    if pet == dog
-      Dog.mood << "happy"
+      if pet == dog
+        Dog.mood << "happy"
+      end
     end
   end
 
