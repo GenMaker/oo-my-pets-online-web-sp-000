@@ -62,6 +62,7 @@ class Owner
     #Cat.all.each {|cat| cat.mood = "nervous", cat.owner= nil}
     @pets.each do |species,pet_details| #value is an array
       pet_details.each do |pet|
+        binding.pry
         pet.mood = "nervous"
         pet.owner = nil
       end
