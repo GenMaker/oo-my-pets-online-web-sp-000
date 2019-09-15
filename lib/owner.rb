@@ -57,9 +57,7 @@ class Owner
   end
 
   def sell_pets
-    #binding.pry
-    #Dog.all.each {|dog| dog.mood = "nervous", dog.owner= nil}
-    #Cat.all.each {|cat| cat.mood = "nervous", cat.owner= nil}
+
     @pets.each do |species,pet_details| #value is an array
       pet_details.each do |pet|
         pet.mood = "nervous"
@@ -84,6 +82,8 @@ class Owner
       # end
 
     #pets = self.cats.concat(self.dogs)
-
   end
+
+    def list_pets
+    end
 end
