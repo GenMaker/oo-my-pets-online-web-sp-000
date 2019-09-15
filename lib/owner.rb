@@ -49,7 +49,7 @@ class Owner
   end
 
   def walk_dogs(name,owner)
-    
+    Dog.mood << "happy"
   end
 
 end
