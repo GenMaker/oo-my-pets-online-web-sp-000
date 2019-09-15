@@ -63,12 +63,19 @@ class Owner
     #@pets.all.each {|pet| pet.all.each {|mood| mood = "nervous"}}
 
 
-    Dog.all.each {|dog| dog.mood = "nervous"}
-    Cat.all.each {|cat| cat.mood = "nervous"}
-    Dog.all.each {|dog| dog.owner= nil}
-    Cat.all.each {|cat| cat.owner= nil}
+    # Dog.all.each {|dog| dog.mood = "nervous"}
+    # Cat.all.each {|cat| cat.mood = "nervous"}
+    # Dog.all.each {|dog| dog.owner= nil}
+    # Cat.all.each {|cat| cat.owner= nil}
 
-    dogs.
+    dogs.all.each do |dog|
+      dog.mood = "nervous"
+      dog.owner= nil
+    end
+    cats.all.each do |cat|
+      cat.mood = "nervous"
+      cat.owner= nil
+    end
 
   end
 end
