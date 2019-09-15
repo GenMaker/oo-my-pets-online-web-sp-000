@@ -83,6 +83,6 @@ class Owner
       #   cat.owner= nil
       # end
 
-    #pets = self.cats.concat(self.dogs)
+    pets = self.cats.concat(self.dogs)
   end
 end
