@@ -60,7 +60,7 @@ class Owner
     #binding.pry
     #Dog.all.each {|dog| dog.mood = "nervous", dog.owner= nil}
     #Cat.all.each {|cat| cat.mood = "nervous", cat.owner= nil}
-    #@pets.all.each {|pet| pet.all.each {|mood| mood = "nervous"}}
+    @pets.each {|pet| pet.all.each {|mood| mood = "nervous"}}
 
       #this code works for sell_pets
       # Dog.all.each {|dog| dog.mood = "nervous"}
