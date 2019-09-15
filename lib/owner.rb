@@ -50,6 +50,8 @@ class Owner
 
   def walk_dogs
     Dog.all.select {|mood| mood  "happy"}
+    # parse the .all data so i can isolate @mood and then convert it to
+    # and instance and then change the value to "happy"
   end
 
 end
