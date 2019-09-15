@@ -60,10 +60,10 @@ class Owner
     #binding.pry
     #Dog.all.each {|dog| dog.mood = "nervous", dog.owner= nil}
     #Cat.all.each {|cat| cat.mood = "nervous", cat.owner= nil}
-    @pets.each do |pet,|
-      pet.each do |mood|
-        mood = "nervous"
-        owner = nil
+    @pets.each do |species,pet_details| #value is an array
+      pet_details.each do |pet|
+        pet.mood = "nervous"
+        pet.owner = nil
       end
     end
 
@@ -83,7 +83,7 @@ class Owner
       #   cat.owner= nil
       # end
 
-    pets = self.cats.concat(self.dogs)
+    #pets = self.cats.concat(self.dogs)
 
   end
 end
