@@ -41,11 +41,15 @@ class Owner
   end
 
   def buy_cat(name)
-    Cat.new(name,self)
+    cat = Cat.new(name,self)
+    @pets[:cats]<< cat
+    cat
   end
 
   def buy_dog(name)
-    Dog.new(name,self)
+    dog = Dog.new(name,self)
+    @pets[:dog]<< dog
+    dog
   end
 
   def walk_dogs
@@ -62,7 +66,6 @@ class Owner
     #Cat.all.each {|cat| cat.mood = "nervous", cat.owner= nil}
     @pets.each do |species,pet_details| #value is an array
       pet_details.each do |pet|
-        binding.pry
         pet.mood = "nervous"
         pet.owner = nil
       end
