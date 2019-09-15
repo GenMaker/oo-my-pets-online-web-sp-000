@@ -68,11 +68,11 @@ class Owner
     # Dog.all.each {|dog| dog.owner= nil}
     # Cat.all.each {|cat| cat.owner= nil}
 
-    dogs.all.each do |dog|
+    dogs.each do |dog|
       dog.mood = "nervous"
       dog.owner= nil
     end
-    cats.all.each do |cat|
+    cats.each do |cat|
       cat.mood = "nervous"
       cat.owner= nil
     end
