@@ -8,7 +8,7 @@ class Cat
     @owner = owner # Hermione
     @mood = "nervous"
     @@all << self
-    @owner.pets[:cats]<< cat
+    @owner.pets[:cats]<< self
   end
 
   def self.all
