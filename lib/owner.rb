@@ -48,12 +48,12 @@ class Owner
     Dog.new(name,self)
   end
 
-  def walk_dogs
-    @@all.collect.select {pet| pet == dog}|
-
-        Dog.mood << "happy"
-      
-    end
-  end
+  # def walk_dogs
+  #   @@all.collect.select {pet| pet == dog}|
+  #
+  #       Dog.mood << "happy"
+  #
+  #   end
+  # end
 
 end
