@@ -86,7 +86,7 @@ class Owner
 
     def list_pets
       num_dogs = @pets[:dogs].size
-      
-      puts "I have #{self.dog.each.count} dog(s), and #{self.cat.each.count} cat(s)."
+      num_cats = @pets[:cats].size
+      puts "I have #{num_dogs} dog(s), and #{num_cats} cat(s)."
     end
 end
