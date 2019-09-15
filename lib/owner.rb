@@ -52,7 +52,7 @@ class Owner
     self.collect.do |pet,owner|
     if pet == dog
       Dog.mood << "happy"
-  
+    end
   end
 
 end
