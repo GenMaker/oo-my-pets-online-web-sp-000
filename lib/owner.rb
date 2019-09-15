@@ -49,7 +49,7 @@ class Owner
   end
 
   def walk_dogs
-    @@all.collect.do |pet , owner|
+    @@all.collect.select |pet, owner|
       if pet == dog
         Dog.mood << "happy"
       end
