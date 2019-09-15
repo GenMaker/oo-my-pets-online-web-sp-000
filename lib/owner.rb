@@ -84,5 +84,6 @@ class Owner
       # end
 
     pets = self.cats.concat(self.dogs)
+    
   end
 end
