@@ -77,5 +77,6 @@ class Owner
       cat.owner= nil
     end
 
+    self.cats.concat(self.dogs)
   end
 end
